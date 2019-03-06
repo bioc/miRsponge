@@ -1,9 +1,9 @@
 library(testthat)
-library(miRspongeR)
+library(miRsponge)
 
-miR2Target <- system.file("extdata", "miR2Target.csv", package="miRspongeR")
+miR2Target <- system.file("extdata", "miR2Target.csv", package="miRsponge")
 miRTarget <- read.csv(miR2Target, header=TRUE, sep=",")
-ExpDatacsv <- system.file("extdata", "ExpData.csv", package="miRspongeR")
+ExpDatacsv <- system.file("extdata", "ExpData.csv", package="miRsponge")
 ExpData <- read.csv(ExpDatacsv, header=FALSE, sep=",")
 
 # miRHomology method

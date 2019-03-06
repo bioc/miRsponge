@@ -43,15 +43,15 @@ Junpeng Zhang (\url{https://www.researchgate.net/profile/Junpeng_Zhang3})
 }
 \examples{
 # Obtain expression data file "ExpData.csv" in csv format
-ExpDatacsv <- system.file("extdata","ExpData.csv",package="miRspongeR")
+ExpDatacsv <- system.file("extdata","ExpData.csv",package="miRsponge")
 ExpData <- read.csv(ExpDatacsv, header=FALSE, sep=",")
 
 # Obtain miRNA-target interaction data file "miR2Target.csv" in csv format
-miR2Target <- system.file("extdata", "miR2Target.csv", package="miRspongeR")
+miR2Target <- system.file("extdata", "miR2Target.csv", package="miRsponge")
 miRTarget <- read.csv(miR2Target, header=TRUE, sep=",")
 
 # Obtain survival data file "SurvData.csv" in csv format
-SurvDatacsv <- system.file("extdata", "SurvData.csv", package="miRspongeR")
+SurvDatacsv <- system.file("extdata", "SurvData.csv", package="miRsponge")
 SurvData <- read.csv(SurvDatacsv, header=TRUE, sep=",")
 pcceRInt <- spongeMethod(miRTarget, ExpData, method = "pc")
 spongenetwork_Cluster <- netModule(pcceRInt[, 1:2])
