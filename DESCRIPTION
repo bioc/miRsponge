@@ -1,7 +1,7 @@
 Package: miRsponge
 Type: Package
 Title: Identification and analysis of miRNA sponge interaction networks and modules
-Version: 1.9.3
+Version: 1.9.4
 Author: Junpeng Zhang
 Maintainer: Junpeng Zhang <zhangjunpeng_411@yahoo.com>
 Description: The name of the miRsponge package has been changed into "miRspongeR". 
@@ -17,7 +17,8 @@ URL: <https://github.com/zhangjunpeng411/miRspongeR>
 Encoding: UTF-8
 LazyData: true
 biocViews: GeneExpression, BiomedicalInformatics, 
-           NetworkEnrichment, Survival, Microarray, Software 
+           NetworkEnrichment, Survival, Microarray, Software
+PackageStatus: Deprecated
 RoxygenNote: 6.0.1
 Imports: corpcor,
     parallel,
